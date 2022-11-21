@@ -14,6 +14,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.maps.android.data.kml.KmlLayer
 
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener  {
@@ -35,16 +36,10 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-//        mapFragment = supportFragmentManager.findFragmentById(R.id.maps) as SupportMapFragment
-//        mapFragment.getMapAsync(OnMapReadyCallback { this })
-
-//        mapFragment.getMapAsync(OnMapReadyCallback {
-//            googleMap = googleMap
-//        })
-
-//        val layer = KmlLayer(googleMap, R.raw.bp01, applicationContext)
-//        layer.addLayerToMap()
-
+        if (::mMap.isInitialized) {
+            val layer = KmlLayer(mMap, R.raw.bp01, applicationContext)
+        layer.addLayerToMap()
+        }
     }
 
 
