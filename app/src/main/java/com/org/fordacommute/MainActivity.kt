@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -36,10 +37,28 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-        if (::mMap.isInitialized) {
-            val layer = KmlLayer(mMap, R.raw.bp01, applicationContext)
-        layer.addLayerToMap()
+        val btn = findViewById<Button>(R.id.currentLoc)
+        btn.setOnClickListener {
+            lastLocation
+            val currentLatLong = LatLng(lastLocation.latitude, lastLocation.longitude)
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLong, 12f))
         }
+
+        val btn1 = findViewById<Button>(R.id.showRoutes)
+        btn1.setOnClickListener {
+            mMap
+            val alangilan = KmlLayer(mMap, R.raw.bp01, applicationContext)
+            alangilan.addLayerToMap()
+            val capitolio = KmlLayer(mMap, R.raw.bp03, applicationContext)
+            capitolio.addLayerToMap()
+            val balagtas = KmlLayer(mMap, R.raw.bp05, applicationContext)
+            balagtas.addLayerToMap()
+            val balete = KmlLayer(mMap, R.raw.bn01, applicationContext)
+            balete.addLayerToMap()
+            val lipa = KmlLayer(mMap, R.raw.bn02, applicationContext)
+            lipa.addLayerToMap()
+        }
+
     }
 
 
@@ -53,6 +72,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         mMap = p0
 
         mMap.uiSettings.isZoomControlsEnabled = true
+        mMap.uiSettings.isMyLocationButtonEnabled = false
         mMap.setOnMarkerClickListener(this)
 
         setUpMap()
@@ -72,7 +92,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
             if (location != null) {
                 lastLocation = location
                 val currentLatLong = LatLng(location.latitude, location.longitude)
-                placeMarkerOnMap(currentLatLong)
+//                placeMarkerOnMap(currentLatLong)
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLong, 12f))
             }
         }
