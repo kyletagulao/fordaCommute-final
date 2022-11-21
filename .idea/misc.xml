@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/bg_round.xml" value="0.318" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/circular.xml" value="0.193" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/gradient_background.xml" value="0.193" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/icon_background.xml" value="0.281" />
@@ -14,7 +15,9 @@
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started.xml" value="0.25" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started_screen2.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started_screen3.xml" value="0.358695652173913" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_main.xml" value="0.26721014492753625" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_getting_started1.xml" value="0.358695652173913" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_maps.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_view_pager.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_view_pager_real.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/gettingstarted_item1.xml" value="0.22" />
