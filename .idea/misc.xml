@@ -17,16 +17,24 @@
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started_screen2.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started_screen3.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_about_app.xml" value="0.36666666666666664" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_fare_guide.xml" value="0.36666666666666664" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_fullscreen.xml" value="0.36666666666666664" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_getting_started1.xml" value="0.358695652173913" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_maps.xml" value="0.358695652173913" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_settings.xml" value="0.36666666666666664" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_view_pager.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_view_pager_real.xml" value="0.358695652173913" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_view_routes.xml" value="0.36666666666666664" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/gettingstarted_item1.xml" value="0.22" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/gettingstarted_item2.xml" value="0.22" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/gettingstarted_item3.xml" value="0.22" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/navigation_menu_header.xml" value="0.36666666666666664" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/onboarding_item_container.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/onboarding_item_container_constraint.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/splash_screen.xml" value="0.33" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/menu/navigation_pane.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

@@ -17,4 +17,14 @@
     <style name="buttonWhite" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@android:color/white</item>
     </style>
+
+    <style name="AssistantTextViewStyle">
+        <item name="android:fontFamily">@font/assistantextrabold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="ThemeOverlay.FordaCommute.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
 </resources>
