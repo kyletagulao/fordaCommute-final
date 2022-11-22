@@ -3,20 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/background_white.xml" value="0.281" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/bg_round.xml" value="0.318" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/bottomtoolbar.xml" value="0.281" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/circular.xml" value="0.193" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/gradient_background.xml" value="0.193" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/icon_background.xml" value="0.281" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/indicator_active_background.xml" value="0.1305" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.281" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/name_container.xml" value="0.281" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/radius.xml" value="0.193" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/search_icon.xml" value="0.318" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/drawable/view_pager_background.xml" value="0.281" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/font/assistant.xml" value="0.3574074074074074" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_fare_system.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started.xml" value="0.25" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started_screen2.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_getting_started_screen3.xml" value="0.358695652173913" />
-        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_main_2.xml" value="0.358695652173913" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_settings.xml" value="0.35260416666666666" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/activity_view_routes.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_about_app.xml" value="0.36666666666666664" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_fare_guide.xml" value="0.36666666666666664" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/fragment_fullscreen.xml" value="0.36666666666666664" />
@@ -31,6 +39,7 @@
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/gettingstarted_item2.xml" value="0.22" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/gettingstarted_item3.xml" value="0.22" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/navigation_menu_header.xml" value="0.36666666666666664" />
+        <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/navigation_toolbar.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/onboarding_item_container.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/onboarding_item_container_constraint.xml" value="0.358695652173913" />
         <entry key="..\:/Codes/Kotlin/fordaCommute/app/src/main/res/layout/splash_screen.xml" value="0.33" />

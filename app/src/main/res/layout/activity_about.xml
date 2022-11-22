@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/custom3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/bottom_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.67" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/center_guideline"
+                app:layout_constraintGuide_percent=".5"
+                android:orientation="vertical"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/menu_button"
+                android:src="@drawable/ic_baseline_menu_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:onClick="ClickMenu"
+                app:tint="#000000"
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fordacommutelogo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="30dp"
+                />
+
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About\nFordaCommute"
+                android:gravity="center"
+                android:fontFamily="@font/bungee"
+                android:textColor="@color/primary"
+                android:textSize="100px"
+                android:layout_marginTop="90dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/aboutText"
+                />
+
+            <TextView
+                android:id="@+id/aboutText"
+                app:layout_constraintTop_toBottomOf="@id/aboutTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/centerLine"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:gravity="center"
+                android:fontFamily="@font/assistantextrabold"
+                android:textColor="@color/primary"
+                android:text="FordaCOMMUTE is an application where users can see the location of transport terminals, view transport routes and fares of different kinds of transportation modes such as tricycles, jeeps, vans, and buses. The app also tells the user where the usual pick-up/drop-off areas of different vehicles are."
+                />
+
+            <View
+                android:id="@+id/centerLine"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#000000"
+                app:layout_constraintTop_toBottomOf="@id/aboutText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/developersTitle"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/developersTitle"
+                android:text="DEVELOPERS"
+                android:fontFamily="@font/inter_extra_bold"
+                android:textColor="#000000"
+                android:textSize="90px"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/centerLine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+                />
+
+
+            <Button
+                android:id="@+id/markAngelo"
+                android:layout_width="130dp"
+                android:layout_height="120px"
+                android:background="@drawable/name_container"
+                android:text="Mark Angelo Maligalig"
+                android:textSize="25px"
+                android:fontFamily="@font/inter_extra_bold"
+                android:textColor="@color/primary"
+                app:backgroundTint="@color/secondary"
+                app:layout_constraintTop_toBottomOf="@+id/developersTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/marcFrancis"
+                app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/joshuaClemente"
+                android:layout_width="130dp"
+                android:layout_height="120px"
+                android:background="@drawable/name_container"
+                android:text="Joshua Clemente"
+                android:textSize="25px"
+                android:fontFamily="@font/inter_extra_bold"
+                android:textColor="@color/primary"
+                app:backgroundTint="@color/secondary"
+                app:layout_constraintTop_toBottomOf="@+id/developersTitle"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tristanJorge"
+                app:layout_constraintLeft_toRightOf="@id/center_guideline"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/marcFrancis"
+                android:layout_width="130dp"
+                android:layout_height="120px"
+                android:background="@drawable/name_container"
+                android:text="Marc Francis Marundan"
+                android:textSize="25px"
+                android:fontFamily="@font/inter_extra_bold"
+                android:textColor="@color/primary"
+                app:backgroundTint="@color/secondary"
+                app:layout_constraintTop_toBottomOf="@+id/markAngelo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/johnMikko"
+                app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:id="@+id/tristanJorge"
+                android:layout_width="130dp"
+                android:layout_height="120px"
+                android:background="@drawable/name_container"
+                android:text="Tristan Jorge Cuartero"
+                android:textSize="25px"
+                android:fontFamily="@font/inter_extra_bold"
+                android:textColor="@color/primary"
+                app:backgroundTint="@color/secondary"
+                app:layout_constraintTop_toBottomOf="@+id/joshuaClemente"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/glenSimbiray"
+                app:layout_constraintLeft_toRightOf="@id/center_guideline"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/johnMikko"
+                android:layout_width="130dp"
+                android:layout_height="120px"
+                android:background="@drawable/name_container"
+                android:text="John Mikko Carurucan"
+                android:textSize="25px"
+                android:fontFamily="@font/inter_extra_bold"
+                android:textColor="@color/primary"
+                app:backgroundTint="@color/secondary"
+                app:layout_constraintTop_toBottomOf="@+id/marcFrancis"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                />
+
+            <Button
+                android:id="@+id/glenSimbiray"
+                android:layout_width="130dp"
+                android:layout_height="120px"
+                android:background="@drawable/name_container"
+                android:text="Glen Simbiray"
+                android:textSize="25px"
+                android:fontFamily="@font/inter_extra_bold"
+                android:textColor="@color/primary"
+                app:backgroundTint="@color/secondary"
+                app:layout_constraintTop_toBottomOf="@+id/tristanJorge"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/center_guideline"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="50dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        >
+
+        <include layout="@layout/navigation_toolbar" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

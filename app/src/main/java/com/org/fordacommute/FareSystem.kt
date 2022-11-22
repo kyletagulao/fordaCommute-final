@@ -1,19 +1,20 @@
 package com.org.fordacommute
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 
-class ViewRoutes : AppCompatActivity() {
+class FareSystem : AppCompatActivity() {
 
     private lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_view_routes)
+        setContentView(R.layout.activity_fare_system)
 
         drawerLayout = findViewById(R.id.drawer_layout)
+
     }
 
     fun ClickMenu(view: View) {
@@ -29,11 +30,11 @@ class ViewRoutes : AppCompatActivity() {
     }
 
     fun ClickFare(view: View) {
-        MainActivity.redirectActivity(this, FareSystem::class.java)
+        MainActivity.closeDrawer(drawerLayout)
     }
 
     fun ClickRoutes(view: View) {
-        MainActivity.closeDrawer(drawerLayout)
+        MainActivity.redirectActivity(this, ViewRoutes::class.java)
     }
 
     fun ClickSettings(view: View) {

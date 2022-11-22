@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.view.View
 import androidx.drawerlayout.widget.DrawerLayout
 
-class ViewRoutes : AppCompatActivity() {
+class Settings : AppCompatActivity() {
 
     private lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_view_routes)
+        setContentView(R.layout.activity_settings)
 
         drawerLayout = findViewById(R.id.drawer_layout)
     }
@@ -33,11 +33,11 @@ class ViewRoutes : AppCompatActivity() {
     }
 
     fun ClickRoutes(view: View) {
-        MainActivity.closeDrawer(drawerLayout)
+        MainActivity.redirectActivity(this, ViewRoutes::class.java)
     }
 
     fun ClickSettings(view: View) {
-        MainActivity.redirectActivity(this, Settings::class.java)
+        MainActivity.closeDrawer(drawerLayout)
     }
 
     fun ClickAbout(view: View) {
