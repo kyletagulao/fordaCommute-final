@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/custom4"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIRECTIONS"
+        android:fontFamily="@font/inter_extra_bold"
+        android:textSize="30sp"
+        android:textColor="#3b3b40"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="600dp"
+        android:background="@color/custom4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose a Starting Point..."
+                android:fontFamily="@font/inter"
+                android:layout_marginBottom="6dp"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/startSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_background"
+                app:queryHint="Choose Starting Point..."
+                />
+
+            <Button
+                android:id="@+id/startCurrentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_my_location_24"
+                android:gravity="start|center_vertical"
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"
+                android:textSize="15sp"
+                android:text="   Your Current Location"
+                android:textAllCaps="false"
+                android:background="?android:attr/selectableItemBackground"/>
+            <Button
+                android:id="@+id/startMapLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:gravity="start|center_vertical"
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"
+                android:textSize="15sp"
+                android:text="   Choose on Map"
+                android:textAllCaps="false"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Destination..."
+                android:fontFamily="@font/inter"
+                android:layout_marginBottom="6dp"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/destinationSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_background"
+                app:queryHint="Choose Destination..."
+                />
+
+            <Button
+                android:id="@+id/destinationCurrentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_my_location_24"
+                android:gravity="start|center_vertical"
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"
+                android:textSize="15sp"
+                android:text="   Your Current Location"
+                android:textAllCaps="false"
+                android:background="?android:attr/selectableItemBackground"/>
+            <Button
+                android:id="@+id/destinationMapLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:gravity="start|center_vertical"
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"
+                android:textSize="15sp"
+                android:text="   Choose on Map"
+                android:textAllCaps="false"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting Point:"
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination:"
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:id="@+id/destinationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/inter"
+                android:textColor="#171717"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goDirection"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go"
+            android:fontFamily="@font/inter_bold"
+            android:backgroundTint="@color/primary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

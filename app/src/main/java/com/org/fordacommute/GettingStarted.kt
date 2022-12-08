@@ -2,6 +2,7 @@ package com.org.fordacommute
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
@@ -19,6 +20,9 @@ class GettingStarted : AppCompatActivity() {
     private lateinit var indicatorsContainer: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_getting_started)
         setOnboardingItems()

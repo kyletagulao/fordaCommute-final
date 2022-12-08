@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BusFragment">
+
+    <ScrollView
+        android:id="@+id/scrollViewRoutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/routesText"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/routesText"
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/nasugbuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batangas City - Nasugbu"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nasugbuContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="BSC: Batangas City - Lemery/Calaca/Balayan/Nasugbu"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/nasugbuSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/pitxText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batangas City - PITX"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/alpsPitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="ALPS: Batangas City - PITX via Tanauan, Santo Tomas"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/alpsPitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bsePitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Batangas Starexpress: Batangas City - PITX via NAIAX/SLEX"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/bsePitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ceresPitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ceres Transport: Batangas City - PITX"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/ceresPitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dltbPitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="DLTBCo: Batangas City - PITX via Skyway"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/dltbPitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/goldstarPitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gold Star: Batangas City - PITX via Lipa City, Alabang"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/goldstarPitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/jamPitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="JAM Liner/Transit: Batangas City - PITX"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/jamPitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/delarosaPitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="N. Dela Rosa Liner: Batangas City - PITX via Santo Tomas"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/delarosaPitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rrcgPitxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="RRCG: Batangas City - PITX"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/rrcgPitxSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/calambaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batangas City - Calamba City"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/japsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="JAPS: Batangas City - Calamba City"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/japsSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/lucenaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batangas City - Lucena City"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/supremeLucenaContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Supreme: Batangas City - Lucena City"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/supremeLucenaSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Show"
+                    android:textSize="11sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/assistantextrabold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

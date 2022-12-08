@@ -127,7 +127,7 @@
             <Button
                 android:id="@+id/markAngelo"
                 android:layout_width="130dp"
-                android:layout_height="120px"
+                android:layout_height="wrap_content"
                 android:background="@drawable/name_container"
                 android:text="Mark Angelo Maligalig"
                 android:textSize="25px"
@@ -146,7 +146,7 @@
             <Button
                 android:id="@+id/joshuaClemente"
                 android:layout_width="130dp"
-                android:layout_height="120px"
+                android:layout_height="wrap_content"
                 android:background="@drawable/name_container"
                 android:text="Joshua Clemente"
                 android:textSize="25px"
@@ -165,7 +165,7 @@
             <Button
                 android:id="@+id/marcFrancis"
                 android:layout_width="130dp"
-                android:layout_height="120px"
+                android:layout_height="wrap_content"
                 android:background="@drawable/name_container"
                 android:text="Marc Francis Marundan"
                 android:textSize="25px"
@@ -183,7 +183,7 @@
             <Button
                 android:id="@+id/tristanJorge"
                 android:layout_width="130dp"
-                android:layout_height="120px"
+                android:layout_height="wrap_content"
                 android:background="@drawable/name_container"
                 android:text="Tristan Jorge Cuartero"
                 android:textSize="25px"
@@ -201,7 +201,7 @@
             <Button
                 android:id="@+id/johnMikko"
                 android:layout_width="130dp"
-                android:layout_height="120px"
+                android:layout_height="wrap_content"
                 android:background="@drawable/name_container"
                 android:text="John Mikko Carurucan"
                 android:textSize="25px"
@@ -220,7 +220,7 @@
             <Button
                 android:id="@+id/glenSimbiray"
                 android:layout_width="130dp"
-                android:layout_height="120px"
+                android:layout_height="wrap_content"
                 android:background="@drawable/name_container"
                 android:text="Glen Simbiray"
                 android:textSize="25px"
@@ -235,7 +235,6 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="50dp"
                 />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800px"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:id="@+id/popupPage"
+    android:background="@drawable/popup_background"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/popupNameText"
+            android:id="@+id/popupImage"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/mark_angelo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/popupNameText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popupImage"
+            app:layout_constraintBottom_toTopOf="@id/popupDescriptionText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/primary"
+            android:text="Mark Angelo Maligalig"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="45px"
+            />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/popupDescriptionText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popupNameText"
+            app:layout_constraintBottom_toTopOf="@+id/popupClose"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/inter_medium"
+            android:text="Programmer and designer of the FordaCommute mobile app. Born on November 16, 2003 in Calamba City, Laguna, he is a college student in Batangas State University - Alangilan (previously Malvar). Musician, recording artist, editor, and sound engineer."
+            android:textSize="28px"
+            android:gravity="center"
+            />
+        
+        <Button
+            android:id="@+id/popupClose"
+            android:layout_width="wrap_content"
+            android:layout_height="110px"
+            android:gravity="center"
+            android:text="Close"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="25px"
+            app:layout_constraintTop_toBottomOf="@+id/popupDescriptionText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
