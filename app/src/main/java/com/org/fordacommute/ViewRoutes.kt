@@ -304,6 +304,16 @@ class ViewRoutes : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerCl
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(lemeryLatLng,11f))
     }
 
+    // Libjo Route
+
+    override fun libjoButton() {
+        mMap
+        val libjoLatLng = LatLng(13.745908, 121.064267)
+        val libjo = KmlLayer(mMap, R.raw.bs02, applicationContext)
+        libjo.addLayerToMap()
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(libjoLatLng,13f))
+    }
+
     // Calamba - Lipa Route
 
     override fun calambaLipaButton() {

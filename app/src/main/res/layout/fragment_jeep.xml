@@ -10,524 +10,541 @@
         android:id="@+id/scrollViewRoutes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/routesText"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/routesText">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/routesText"
-        android:paddingTop="5dp"
-        >
-
-        <TextView
-            android:id="@+id/batangasProperText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Batangas Proper/Poblacion"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="@color/tertiary"
-            android:textSize="15sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/alangilanContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="BP-01 (Batangas City Proper - Alangilan)"
-            android:fontFamily="@font/inter_medium"
-            android:textColor="@color/tertiary"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginLeft="20dp"
-            />
-
-        <Button
-            android:id="@+id/alangilanSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="Show"
-            android:textSize="11sp"
-            android:textColor="@color/primary"
-            android:fontFamily="@font/assistantextrabold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="15dp"
-            android:backgroundTint="@color/secondary"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/capitolioContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="BP-03 (Batangas City Proper - Capitolio)"
-            android:fontFamily="@font/inter_medium"
-            android:textColor="@color/tertiary"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginLeft="20dp"
-            />
-
-        <Button
-            android:id="@+id/capitolioSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="Show"
-            android:textSize="11sp"
-            android:textColor="@color/primary"
-            android:fontFamily="@font/assistantextrabold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="15dp"
-            android:backgroundTint="@color/secondary"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/balagtasContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="BP-05 (Batangas City Proper - Balagtas)"
-            android:fontFamily="@font/inter_medium"
-            android:textColor="@color/tertiary"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginLeft="20dp"
-            />
-
-        <Button
-            android:id="@+id/balagtasSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="Show"
-            android:textSize="11sp"
-            android:textColor="@color/primary"
-            android:fontFamily="@font/assistantextrabold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="15dp"
-            android:backgroundTint="@color/secondary"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:id="@+id/batangasNorthText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Batangas North"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="@color/tertiary"
-            android:textSize="15sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="20dp"
-            />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/baleteContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="BN-01 (Batangas City - Balete)"
-            android:fontFamily="@font/inter_medium"
-            android:textColor="@color/tertiary"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginLeft="20dp"
-            />
-
-        <Button
-            android:id="@+id/baleteSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="Show"
-            android:textSize="11sp"
-            android:textColor="@color/primary"
-            android:fontFamily="@font/assistantextrabold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="15dp"
-            android:backgroundTint="@color/secondary"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/lipaContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="BN-02 (Batangas City - Lipa City)"
-            android:fontFamily="@font/inter_medium"
-            android:textColor="@color/tertiary"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginLeft="20dp"
-            />
-
-        <Button
-            android:id="@+id/lipaSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="Show"
-            android:textSize="11sp"
-            android:textColor="@color/primary"
-            android:fontFamily="@font/assistantextrabold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="15dp"
-            android:backgroundTint="@color/secondary"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:id="@+id/batangasWestText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Batangas West"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="@color/tertiary"
-            android:textSize="15sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="20dp"
-            />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/bauanContainer"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp">
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/routesText">
 
             <TextView
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:text="BW-02 (Batangas City Proper - Bauan)"
-                android:fontFamily="@font/inter_medium"
-                android:textColor="@color/tertiary"
-                android:textSize="13sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginLeft="20dp"
-                />
-
-            <Button
-                android:id="@+id/bauanSwitch"
+                android:id="@+id/batangasProperText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="Show"
-                android:textSize="11sp"
-                android:textColor="@color/primary"
-                android:fontFamily="@font/assistantextrabold"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginRight="15dp"
-                android:backgroundTint="@color/secondary"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Batangas Proper/Poblacion"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/alangilanContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/bauanGtContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp">
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BP-01 (Batangas City Proper - Alangilan)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/alangilanSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/capitolioContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BP-03 (Batangas City Proper - Capitolio)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/capitolioSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/balagtasContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BP-05 (Batangas City Proper - Balagtas)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/balagtasSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:text="BW-02 (Batangas City (Grand Terminal) - Bauan)"
-                android:fontFamily="@font/inter_medium"
-                android:textColor="@color/tertiary"
-                android:textSize="13sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginLeft="20dp"
-                />
-
-            <Button
-                android:id="@+id/bauanGtSwitch"
+                android:id="@+id/batangasNorthText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="Show"
-                android:textSize="11sp"
-                android:textColor="@color/primary"
-                android:fontFamily="@font/assistantextrabold"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginRight="15dp"
-                android:backgroundTint="@color/secondary"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Batangas North"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/baleteContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/lemeryContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp">
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BN-01 (Batangas City - Balete)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/baleteSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lipaContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BN-02 (Batangas City - Lipa City)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/lipaSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:text="BW-04 (Batangas City - Lemery)"
-                android:fontFamily="@font/inter_medium"
-                android:textColor="@color/tertiary"
-                android:textSize="13sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginLeft="20dp"
-                />
-
-            <Button
-                android:id="@+id/lemerySwitch"
+                android:id="@+id/batangasWestText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="Show"
-                android:textSize="11sp"
-                android:textColor="@color/primary"
-                android:fontFamily="@font/assistantextrabold"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginRight="15dp"
-                android:backgroundTint="@color/secondary"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Batangas West"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bauanContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
-        <TextView
-            android:id="@+id/calambaJeepneyText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calamba City"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="@color/tertiary"
-            android:textSize="15sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="20dp"
-            />
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BW-02 (Batangas City Proper - Bauan)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/calambaLipaContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp">
+                <Button
+                    android:id="@+id/bauanSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bauanGtContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BW-02 (Batangas City (Grand Terminal) - Bauan)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bauanGtSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lemeryContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BW-04 (Batangas City - Lemery)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/lemerySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:text="Calamba City - Lipa City via Tanauan"
-                android:fontFamily="@font/inter_medium"
-                android:textColor="@color/tertiary"
-                android:textSize="13sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginLeft="20dp"
-                />
-
-            <Button
-                android:id="@+id/calambaLipaSwitch"
+                android:id="@+id/batangasSouthText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="Show"
-                android:textSize="11sp"
-                android:textColor="@color/primary"
-                android:fontFamily="@font/assistantextrabold"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginRight="15dp"
-                android:backgroundTint="@color/secondary"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Batangas South"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/libjoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/calambaBalibagoContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp">
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="BS-02 (Batangas City - Libjo)"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/libjoSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:text="Calamba City - Balibago via SLEX"
-                android:fontFamily="@font/inter_medium"
-                android:textColor="@color/tertiary"
-                android:textSize="13sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginLeft="20dp"
-                />
-
-            <Button
-                android:id="@+id/calambaBalibagoSwitch"
+                android:id="@+id/calambaJeepneyText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="Show"
-                android:textSize="11sp"
-                android:textColor="@color/primary"
-                android:fontFamily="@font/assistantextrabold"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginRight="15dp"
-                android:backgroundTint="@color/secondary"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Calamba City"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/calambaLipaContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:id="@+id/calambaPacitaContainer"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="5dp">-->
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Calamba City - Lipa City via Tanauan"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-<!--            <TextView-->
-<!--                android:layout_width="220dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Calamba City - Pacita Complex"-->
-<!--                android:fontFamily="@font/inter_medium"-->
-<!--                android:textColor="@color/tertiary"-->
-<!--                android:textSize="13sp"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintLeft_toLeftOf="parent"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                android:layout_marginLeft="20dp"-->
-<!--                />-->
+                <Button
+                    android:id="@+id/calambaLipaSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-<!--            <Button-->
-<!--                android:id="@+id/calambaPacitaSwitch"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:text="Show"-->
-<!--                android:textSize="11sp"-->
-<!--                android:textColor="@color/primary"-->
-<!--                android:fontFamily="@font/assistantextrabold"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintRight_toRightOf="parent"-->
-<!--                android:layout_marginRight="15dp"-->
-<!--                android:backgroundTint="@color/secondary"-->
-<!--                />-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/calambaBalibagoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
 
-        <TextView
-            android:id="@+id/balibagoJeepneyText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Santa Rosa City (Balibago)"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="@color/tertiary"
-            android:textSize="15sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="20dp"
-            />
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Calamba City - Balibago via SLEX"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/balibagoTagaytayContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp">
+                <Button
+                    android:id="@+id/calambaBalibagoSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--            android:id="@+id/calambaPacitaContainer"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="5dp">-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="220dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Calamba City - Pacita Complex"-->
+            <!--                android:fontFamily="@font/inter_medium"-->
+            <!--                android:textColor="@color/tertiary"-->
+            <!--                android:textSize="13sp"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/calambaPacitaSwitch"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:text="Show"-->
+            <!--                android:textSize="11sp"-->
+            <!--                android:textColor="@color/primary"-->
+            <!--                android:fontFamily="@font/assistantextrabold"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                app:layout_constraintRight_toRightOf="parent"-->
+            <!--                android:layout_marginRight="15dp"-->
+            <!--                android:backgroundTint="@color/secondary"-->
+            <!--                />-->
+
+            <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
             <TextView
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:text="Santa Rosa City (Balibago) - Tagaytay City"
-                android:fontFamily="@font/inter_medium"
-                android:textColor="@color/tertiary"
-                android:textSize="13sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginLeft="20dp"
-                />
-
-            <Button
-                android:id="@+id/balibagoTagaytaySwitch"
+                android:id="@+id/balibagoJeepneyText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="Show"
-                android:textSize="11sp"
-                android:textColor="@color/primary"
-                android:fontFamily="@font/assistantextrabold"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginRight="15dp"
-                android:backgroundTint="@color/secondary"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Santa Rosa City (Balibago)"
+                android:textColor="@color/tertiary"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/balibagoTagaytayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Santa Rosa City (Balibago) - Tagaytay City"
+                    android:textColor="@color/tertiary"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/balibagoTagaytaySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/secondary"
+                    android:fontFamily="@font/assistantextrabold"
+                    android:text="Show"
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-    </LinearLayout>
+        </LinearLayout>
 
     </ScrollView>
-
 
 
 </FrameLayout>

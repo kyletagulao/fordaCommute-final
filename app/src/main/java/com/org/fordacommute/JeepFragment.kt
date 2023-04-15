@@ -23,6 +23,7 @@ open class JeepFragment : Fragment() {
         fun bauanButton()
         fun bauanGtButton()
         fun lemeryButton()
+        fun libjoButton()
         fun calambaLipaButton()
         fun calambaBalibagoButton()
         fun balibagoTagaytayButton()
@@ -36,6 +37,7 @@ open class JeepFragment : Fragment() {
     lateinit var bauanListener: onButtonListener
     lateinit var bauanGtListener: onButtonListener
     lateinit var lemeryListener: onButtonListener
+    lateinit var libjoListener: onButtonListener
     lateinit var calambaLipaListener: onButtonListener
     lateinit var calambaBalibagoListener: onButtonListener
     lateinit var balibagoTagaytayListener: onButtonListener
@@ -50,6 +52,7 @@ open class JeepFragment : Fragment() {
             bauanListener = context as onButtonListener
             bauanGtListener = context as onButtonListener
             lemeryListener = context as onButtonListener
+            libjoListener = context as onButtonListener
             calambaLipaListener = context as onButtonListener
             calambaBalibagoListener = context as onButtonListener
             balibagoTagaytayListener = context as onButtonListener
@@ -100,6 +103,11 @@ open class JeepFragment : Fragment() {
         val lemerySwitch = view.findViewById<Button>(R.id.lemerySwitch)
         lemerySwitch.setOnClickListener {
             lemeryListener.lemeryButton()
+        }
+
+        val libjoSwitch = view.findViewById<Button>(R.id.libjoSwitch)
+        libjoSwitch.setOnClickListener {
+            libjoListener.libjoButton()
         }
 
         val calambaLipaSwitch = view.findViewById<Button>(R.id.calambaLipaSwitch)
